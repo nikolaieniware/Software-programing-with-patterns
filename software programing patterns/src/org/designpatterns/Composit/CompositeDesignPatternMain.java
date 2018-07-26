@@ -3,12 +3,12 @@ package org.designpatterns.Composit;
 public class CompositeDesignPatternMain {
 
 	public static void main(String[] args) {
-		  Служител emp1=new Разработчик("Маргарита", 15000);
-		  Служител emp2=new Разработчик("Цветелин", 15000);
-		  Служител emp3=new Разработчик("Николай", 10000);
-		  Служител manager1=new Мениджър("Пламен",25000);
-		  Служител emp4=new Разработчик("Новопостъпил", 20000);
-		  Мениджър generalManager=new Мениджър("Марио", 50000);
+		  Employee emp1=new Developer("Margarita", 15000);
+		  Employee emp2=new Developer("Tsvetelin", 15000);
+		  Employee emp3=new Developer("Nikolai", 10000);
+		  Employee manager1=new Menager("Plamen",25000);
+		  Employee emp4=new Developer("The new guy", 20000);
+		  Menager generalManager=new Menager("Mario", 50000);
 		  manager1.add(emp1);
 		  manager1.add(emp2);
 		  generalManager.add(emp3);

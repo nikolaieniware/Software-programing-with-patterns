@@ -1,18 +1,18 @@
 package org.designpatterns.Composit;
 
-public  class Разработчик implements Служител {
+public  class Developer implements Employee {
 	private String name;
-	  private double Заплата;
+	  private double Salary;
 
-	  public Разработчик(String name,double Заплата){
+	  public Developer(String name,double Salary){
 	    this.name = name;
-	    this.Заплата = Заплата;
+	    this.Salary = Salary;
 	  }
-	  public void add(Служител employee) {
+	  public void add(Employee employee) {
 	    //this is leaf node so this method is not applicable to this class.
 	  }
 
-	  public Служител getChild(int i) {
+	  public Employee getChild(int i) {
 	    //this is leaf node so this method is not applicable to this class.
 	    return null;
 	  }
@@ -21,19 +21,19 @@ public  class Разработчик implements Служител {
 	    return name;
 	  }
 
-	  public double getЗаплата() {
-	    return Заплата;
+	  public double getSalary() {
+	    return Salary;
 	  }
 
 	  public void print() {
 	    System.out.println("-------------");
-	    System.out.println("Цените са в Български лева");
+	    System.out.println("The salary are in Bulgarian Leva");
 	    System.out.println("Име ="+getName());
-	    System.out.println("Заплата ="+getЗаплата());
+	    System.out.println("Заплата ="+getSalary());
 	    System.out.println("-------------");
 	  }
 
-	  public void remove(Служител employee) {
+	  public void remove(Employee employee) {
 	    //this is leaf node so this method is not applicable to this class.
 	  }
 
